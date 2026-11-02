@@ -1,0 +1,152 @@
+{
+  "modelName": "AcousticPhoneticCommandClassifier",
+  "version": "1.0.0",
+  "metadata": {
+    "description": "Local offline vocal energy, spectrogram envelope and phonetic duration templates for voice-activated intents.",
+    "sampleRate": 44100,
+    "fftSize": 64,
+    "totalTemplates": 35
+  },
+  "acousticTemplates": [
+    {
+      "intent": "OPEN_CALENDAR",
+      "phrases": ["open calendar", "go to calendar", "show calendar", "take me to calendar", "i want to see my calendar", "open my calendar"],
+      "acousticSignature": {
+        "durationMs": 1100,
+        "energyPeaks": [0.2, 0.5, 0.8],
+        "spectralDensity": [0.15, 0.35, 0.45, 0.25],
+        "dominantFreqHz": 340
+      }
+    },
+    {
+      "intent": "OPEN_GESTURE",
+      "phrases": ["open gesture mode", "open gesture", "gesture mode", "activate gesture navigation", "gesture navigation"],
+      "acousticSignature": {
+        "durationMs": 1300,
+        "energyPeaks": [0.3, 0.6, 0.9],
+        "spectralDensity": [0.2, 0.4, 0.35, 0.3],
+        "dominantFreqHz": 420
+      }
+    },
+    {
+      "intent": "OPEN_CHAT",
+      "phrases": ["open chat bot", "open chat", "go to chat", "show chat bot", "talk to chat bot", "open chat assistant"],
+      "acousticSignature": {
+        "durationMs": 1000,
+        "energyPeaks": [0.2, 0.5, 0.75],
+        "spectralDensity": [0.25, 0.3, 0.4, 0.2],
+        "dominantFreqHz": 310
+      }
+    },
+    {
+      "intent": "OPEN_PRODUCTIVITY",
+      "phrases": ["open productivity", "open productivity dashboard", "start productivity", "open focus dashboard", "productivity dashboard"],
+      "acousticSignature": {
+        "durationMs": 1400,
+        "energyPeaks": [0.1, 0.4, 0.7, 0.95],
+        "spectralDensity": [0.18, 0.42, 0.38, 0.22],
+        "dominantFreqHz": 380
+      }
+    },
+    {
+      "intent": "OPEN_TIME_MANAGEMENT",
+      "phrases": ["open time management", "go to time management", "time management section"],
+      "acousticSignature": {
+        "durationMs": 1500,
+        "energyPeaks": [0.2, 0.5, 0.8, 0.95],
+        "spectralDensity": [0.12, 0.38, 0.48, 0.22],
+        "dominantFreqHz": 350
+      }
+    },
+    {
+      "intent": "OPEN_CLOCK",
+      "phrases": ["open clock", "show clock", "go to clock", "what time is it", "show me the time", "clock section"],
+      "acousticSignature": {
+        "durationMs": 900,
+        "energyPeaks": [0.3, 0.65],
+        "spectralDensity": [0.3, 0.4, 0.2, 0.15],
+        "dominantFreqHz": 290
+      }
+    },
+    {
+      "intent": "OPEN_ALARM",
+      "phrases": ["open alarm", "open alarms", "alarm section", "set an alarm", "set alarm", "create an alarm", "wake me up"],
+      "acousticSignature": {
+        "durationMs": 1000,
+        "energyPeaks": [0.25, 0.7],
+        "spectralDensity": [0.22, 0.45, 0.3, 0.18],
+        "dominantFreqHz": 400
+      }
+    },
+    {
+      "intent": "OPEN_TIMER",
+      "phrases": ["open timer", "timer section", "set a timer", "start timer", "start a timer", "stop timer", "pause timer", "resume timer", "reset timer"],
+      "acousticSignature": {
+        "durationMs": 950,
+        "energyPeaks": [0.35, 0.75],
+        "spectralDensity": [0.28, 0.35, 0.42, 0.25],
+        "dominantFreqHz": 360
+      }
+    },
+    {
+      "intent": "OPEN_STOPWATCH",
+      "phrases": ["open stopwatch", "stopwatch section", "start stopwatch", "stop stopwatch", "pause stopwatch", "resume stopwatch", "reset stopwatch"],
+      "acousticSignature": {
+        "durationMs": 1100,
+        "energyPeaks": [0.2, 0.5, 0.85],
+        "spectralDensity": [0.15, 0.32, 0.45, 0.32],
+        "dominantFreqHz": 330
+      }
+    },
+    {
+      "intent": "OPEN_REMINDER",
+      "phrases": ["open reminder", "open reminders", "reminder section", "set a reminder", "remind me", "create a reminder"],
+      "acousticSignature": {
+        "durationMs": 1050,
+        "energyPeaks": [0.2, 0.6, 0.8],
+        "spectralDensity": [0.2, 0.35, 0.4, 0.25],
+        "dominantFreqHz": 310
+      }
+    },
+    {
+      "intent": "OPEN_MUSIC",
+      "phrases": ["open music", "open music player", "play perfect", "play blinding lights", "play cruel summer", "play blank space", "play jai ho", "play tere bina", "play naa ready", "play chaleya", "play levitating", "play stay", "play another song", "pause music", "resume music", "stop music", "next song", "previous song"],
+      "acousticSignature": {
+        "durationMs": 1200,
+        "energyPeaks": [0.3, 0.65, 0.85],
+        "spectralDensity": [0.25, 0.38, 0.45, 0.22],
+        "dominantFreqHz": 350
+      }
+    },
+    {
+      "intent": "GET_NEXT_PERIOD",
+      "phrases": ["what is my next period", "what's my next period", "which is my next class", "what class is next", "what do i have next"],
+      "acousticSignature": {
+        "durationMs": 1400,
+        "energyPeaks": [0.15, 0.45, 0.75, 0.9],
+        "spectralDensity": [0.15, 0.35, 0.42, 0.25],
+        "dominantFreqHz": 370
+      }
+    },
+    {
+      "intent": "GET_TODAYS_TIMETABLE",
+      "phrases": ["what is today's timetable", "show today's timetable", "what periods do i have today", "what classes do i have today", "my timetable", "today's timetable", "today's schedule"],
+      "acousticSignature": {
+        "durationMs": 1600,
+        "energyPeaks": [0.2, 0.4, 0.6, 0.85],
+        "spectralDensity": [0.14, 0.36, 0.44, 0.28],
+        "dominantFreqHz": 340
+      }
+    },
+    {
+      "intent": "GET_TOMORROWS_TIMETABLE",
+      "phrases": ["what is my timetable tomorrow", "what do i have tomorrow", "what periods do i have tomorrow", "tomorrow's schedule", "tomorrow's timetable"],
+      "acousticSignature": {
+        "durationMs": 1550,
+        "energyPeaks": [0.25, 0.5, 0.75, 0.9],
+        "spectralDensity": [0.16, 0.34, 0.42, 0.26],
+        "dominantFreqHz": 330
+      }
+    }
+  ]
+}

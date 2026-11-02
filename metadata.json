@@ -1,0 +1,6 @@
+{
+  "name": "Friendly Bot Control Center",
+  "description": "Facial Recognition, Gesture Detection, Time Management, Productivity Dashboard, Music Player, and Chat Bot powered by Gemini AI with search grounding and text-to-speech voice output.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
